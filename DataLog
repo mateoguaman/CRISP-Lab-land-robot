@@ -1,0 +1,780 @@
+Data Log
+
+
+14-July-2017
+
+//This version does not have autorange enabled for any of the IMU sensors;
+
+First time through:
+
+Setup: Robot facing forward (outside of desk) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 55
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 142
+The Upper-Right IR reads: 10
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.27
+The acceloremeter is reading a pitch of: -1.44
+The magnetometer (compass) is reading a heading of: 170.48
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing right (window) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 16
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 83
+The Upper-Right IR reads: 8
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.31
+The acceloremeter is reading a pitch of: -1.26
+The magnetometer (compass) is reading a heading of: 117.28
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing backward (computers) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 13
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 8
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.68
+The acceloremeter is reading a pitch of: -1.44
+The magnetometer (compass) is reading a heading of: 127.72
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing left (door) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 11
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 34
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.31
+The acceloremeter is reading a pitch of: -1.89
+The magnetometer (compass) is reading a heading of: 16.86
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Second time through:
+
+
+Setup: Robot facing forward (outside of desk) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 132
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 14
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.51
+The acceloremeter is reading a pitch of: -1.88
+The magnetometer (compass) is reading a heading of: 174.09
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing right (window) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 51
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 80
+The Upper-Right IR reads: 800
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.46
+The acceloremeter is reading a pitch of: -1.44
+The magnetometer (compass) is reading a heading of: 121.96
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing backward (computers) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 18
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 12
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.70
+The acceloremeter is reading a pitch of: -1.45
+The magnetometer (compass) is reading a heading of: 111.80
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing left (door) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 11
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 142
+The Upper-Right IR reads: 95
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.27
+The acceloremeter is reading a pitch of: -1.45
+The magnetometer (compass) is reading a heading of: 15.40
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+//Note: When the robot faces the door and very slightly backwards it reaches a heading of 0.0;
+
+
+Third time through:
+
+
+Setup: Robot facing forward (outside of desk) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 196
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 15
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.50
+The acceloremeter is reading a pitch of: -1.66
+The magnetometer (compass) is reading a heading of: 173.48
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing right (window) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 28
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 78
+The Upper-Right IR reads: 800
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.70
+The acceloremeter is reading a pitch of: -1.24
+The magnetometer (compass) is reading a heading of: 123.13
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing backward (computers) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 18
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 72
+The Upper-Right IR reads: 11
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.70
+The acceloremeter is reading a pitch of: -1.24
+The magnetometer (compass) is reading a heading of: 112.92
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing left (door) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 14
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 42
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.90
+The acceloremeter is reading a pitch of: -2.07
+The magnetometer (compass) is reading a heading of: 35.78
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+
+Code being run: 
+
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_LSM303_U.h>
+#include <Adafruit_L3GD20_U.h>
+#include <Adafruit_9DOF.h>
+#include <Servo.h>
+#include <SharpIR.h>
+#include <String.h>
+
+//=================================================================
+//                              Sharp IRs
+//=================================================================
+    
+//LU stands for Left-Up, LD for Left-Down, RD for Right-Down, RU for Right-Up
+//Initialize SharpIR objects
+SharpIR sharp_LU(0, 430);
+SharpIR sharp_LD(1, 430);
+SharpIR sharp_RD(2, 430);
+SharpIR sharp_RU(3, 430);
+
+int dist_IR_LU;
+int dist_IR_LD;
+int dist_IR_RD;
+int dist_IR_RU;
+
+//=================================================================
+//                              SERVO
+//=================================================================
+  
+Servo myservo; 
+//Set initial position to be 90º
+int pos = 90;
+
+//=================================================================
+//                              PING)))
+//=================================================================
+   
+//Pin for signal pin in Parallax PING)))
+const int pingPin = 7;
+
+//=================================================================
+//                              Motors
+//=================================================================
+
+//PWM speeds for DC motors
+const int zero = 0, fullSpeed = 255, halfSpeed = 128, quarterSpeed = 64, threeQuarterSpeed = 191; 
+
+int driveSpeed = zero;
+int min_distance = 20;
+bool keepScanning = true;
+
+//=================================================================
+//                              IMU
+//=================================================================
+
+Adafruit_9DOF                dof   = Adafruit_9DOF();
+Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(30301);
+Adafruit_LSM303_Mag_Unified   mag   = Adafruit_LSM303_Mag_Unified(30302);
+Adafruit_L3GD20_Unified gyro = Adafruit_L3GD20_Unified(20);
+float seaLevelPressure = SENSORS_PRESSURE_SEALEVELHPA;
+
+float roll;
+float pitch;
+float heading; 
+float gyroX;
+float gyroY;
+float gyroZ;
+
+//=================================================================
+//                              Extra
+//=================================================================
+
+// establish variables for duration of the ping,
+// and the distance result in inches and centimeters:
+long duration, inches, cm;
+
+void initSensors()
+{
+  if(!accel.begin())
+  {
+    /* There was a problem detecting the LSM303 ... check your connections */
+    Serial.println(F("Ooops, no LSM303 detected ... Check your wiring!"));
+    while(1);
+  }
+  if(!mag.begin())
+  {
+    /* There was a problem detecting the LSM303 ... check your connections */
+    Serial.println("Ooops, no LSM303 detected ... Check your wiring!");
+    while(1);
+  }
+
+  if(!gyro.begin())
+  {
+    /* There was a problem detecting the L3GD20 ... check your connections */
+    Serial.println("Ooops, no L3GD20 detected ... Check your wiring!");
+    while(1);
+  }
+}
+
+void setup() 
+{
+  Serial.begin(9600);
+  myservo.attach(10);
+  pinMode(8,OUTPUT);       //Channel A Brake Pin Initialize
+  pinMode(9,OUTPUT);       //Channel B Brake Pin Initialize 
+  pinMode(12,OUTPUT);      //Channel A Direction Pin Initialize
+  pinMode(13,OUTPUT);      //Channel B Direction Pin Initialize
+
+  myservo.write(90);
+
+  initSensors();    
+
+}
+
+void loop() 
+{
+//  duration = calculateDuration();
+//  cm = microsecondsToCentimeters(duration);
+//  if (cm < 20)
+//  {
+//    avoid();
+//  }
+//  else
+//  {
+//    forward(10, quarterSpeed);
+//  }
+  Serial.println("===============================================");
+
+//=================================================================
+//                              SERVO
+//=================================================================
+    
+    myservo.write(90);
+    Serial.print("The position of the Servo is: ");
+    Serial.println(myservo.read());
+    
+//=================================================================
+//                              PING)))
+//=================================================================
+    
+    duration = calculateDuration();
+    cm = microsecondsToCentimeters(duration);
+    Serial.print("The PING))) sensor detects object at: ");
+    Serial.println(cm);
+
+//=================================================================
+//                              Sharp IRs
+//=================================================================
+    
+    dist_IR_LU = sharp_LU.distance();
+    dist_IR_LD = sharp_LD.distance();
+    dist_IR_RD = sharp_RD.distance();
+    dist_IR_RU = sharp_RU.distance();
+    Serial.print("The Upper-Left IR reads: ");
+    Serial.println(dist_IR_LU);
+    Serial.print("The Lower-Left IR reads: ");
+    Serial.println(dist_IR_LD);
+    Serial.print("The Upper-Right IR reads: ");
+    Serial.println(dist_IR_RU);
+    Serial.print("The Lower-Right IR reads: ");
+    Serial.println(dist_IR_RD);
+
+//=================================================================
+//                              Motors
+//=================================================================
+
+    forward(0.1, driveSpeed);
+    Serial.print("The motors are running at a speed of: ");
+    Serial.println(driveSpeed);
+     
+//=================================================================
+//                              IMU
+//=================================================================
+
+  sensors_event_t accel_event;
+  sensors_event_t mag_event;
+  sensors_event_t gyro_event;
+  sensors_vec_t   orientation;
+
+  accel.getEvent(&accel_event);
+  if (dof.accelGetOrientation(&accel_event, &orientation))
+  {
+    roll = orientation.roll;
+    pitch = orientation.pitch;
+    Serial.print("The accelerometer is reading a roll of: ");
+    Serial.println(roll);
+    Serial.print("The acceloremeter is reading a pitch of: ");
+    Serial.println(pitch);
+  }
+
+  mag.getEvent(&mag_event);
+  if (dof.magGetOrientation(SENSOR_AXIS_Z, &mag_event, &orientation))
+  {
+    heading = orientation.heading;
+    Serial.print("The magnetometer (compass) is reading a heading of: ");
+    Serial.println(heading);
+  }
+
+  gyro.getEvent(&gyro_event);
+  gyroX = gyro_event.gyro.x;
+  gyroY = gyro_event.gyro.y;
+  gyroZ = gyro_event.gyro.z;
+
+  Serial.print("The gyro is reading a X, Y, Z acceleration of: ");
+  Serial.print(gyroX);
+  Serial.print(", ");
+  Serial.print(gyroY);
+  Serial.print(", ");
+  Serial.println(gyroZ);
+
+//=================================================================
+  Serial.println("===============================================");
+  delay(3000);
+  
+}
+
+//=================================================================
+//                              Motors
+//=================================================================
+
+long microsecondsToInches(long microseconds) 
+{
+  // According to Parallax's datasheet for the PING))), there are
+  // 73.746 microseconds per inch (i.e. sound travels at 1130 feet per
+  // second).  This gives the distance travelled by the ping, outbound
+  // and return, so we divide by 2 to get the distance of the obstacle.
+  // See: http://www.parallax.com/dl/docs/prod/acc/28015-PING-v1.3.pdf
+  return microseconds / 74 / 2;
+}
+
+long microsecondsToCentimeters(long microseconds) 
+{
+  // The speed of sound is 340 m/s or 29 microseconds per centimeter.
+  // The ping travels out and back, so to find the distance of the
+  // object we take half of the distance travelled.
+  return microseconds / 29 / 2;
+}
+
+long calculateDuration()
+{
+  // The PING))) is triggered by a HIGH pulse of 2 or more microseconds.
+  // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+  //long duration;
+  pinMode(pingPin, OUTPUT);
+  digitalWrite(pingPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(pingPin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(pingPin, LOW);
+  pinMode(pingPin, INPUT);
+  duration = pulseIn(pingPin, HIGH);
+  return duration;
+}
+
+void forward(int duration, int driveSpeed)
+{
+  digitalWrite(12,LOW);
+  digitalWrite(13, LOW);
+  analogWrite(3, driveSpeed);
+  analogWrite(11, driveSpeed); 
+  delay(duration);
+}
+
+void backward(int duration, int driveSpeed)
+{
+  digitalWrite(12,HIGH);
+  digitalWrite(13, HIGH);
+  analogWrite(3, driveSpeed);
+  analogWrite(11, driveSpeed);
+  delay(duration);
+}
+
+void turnRight(int duration, int driveSpeed)
+{
+  digitalWrite(12, LOW);
+  digitalWrite(13, HIGH);
+  analogWrite(3, driveSpeed);
+  analogWrite(11, driveSpeed);
+  delay(duration);
+}
+
+void turnLeft(int duration, int driveSpeed)
+{
+  digitalWrite(12, HIGH);
+  digitalWrite(13, LOW);
+  analogWrite(3, driveSpeed);
+  analogWrite(11, driveSpeed);
+  delay(duration);  
+}
+
+void safetyBreakA()
+{
+  analogWrite(3,0);
+  delay(100);
+}
+
+void safetyBreakB()
+{
+  analogWrite(11,0);
+  delay(100);
+}
+
+void idle()
+{
+  digitalWrite(12,LOW);
+  digitalWrite(13, LOW);
+  analogWrite(3, zero);
+  analogWrite(11, zero); 
+}
+
+void avoid()
+{
+  //keepScanning = false;
+  safetyBreakA();
+  safetyBreakB();
+    
+  backward(1000, quarterSpeed);
+    
+  safetyBreakA();
+  safetyBreakB();
+    
+  turnLeft(1000, fullSpeed);
+    
+  safetyBreakA();
+  safetyBreakB();
+}
+
+-------------------------------------------------------------------------------
+
+//This version has autorange enabled for all sensors
+
+First time through:
+
+Setup: Robot facing forward (outside of desk) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 139
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 68
+The Upper-Right IR reads: 19
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.48
+The acceloremeter is reading a pitch of: -1.45
+The magnetometer (compass) is reading a heading of: 176.53
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing right (window) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 8
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 800
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -1.87
+The acceloremeter is reading a pitch of: -1.04
+The magnetometer (compass) is reading a heading of: 114.36
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.04
+===============================================
+
+
+Setup: Robot facing backward (computers) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 19
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 14
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.50
+The acceloremeter is reading a pitch of: -1.46
+The magnetometer (compass) is reading a heading of: 100.51
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Setup: Robot facing left (door) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 14
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 142
+The Upper-Right IR reads: 37
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.47
+The acceloremeter is reading a pitch of: -1.44
+The magnetometer (compass) is reading a heading of: 37.13
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Second time through:
+
+
+Setup: Robot facing forward (outside of desk) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 43
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 68
+The Upper-Right IR reads: 14
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.27
+The acceloremeter is reading a pitch of: -1.45
+The magnetometer (compass) is reading a heading of: 175.38
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.04
+===============================================
+
+
+Setup: Robot facing right (window) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 21
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 68
+The Upper-Right IR reads: 800
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -1.85
+The acceloremeter is reading a pitch of: -1.23
+The magnetometer (compass) is reading a heading of: 115.81
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.04
+===============================================
+
+
+Setup: Robot facing backward (computers) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 19
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 11
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.49
+The acceloremeter is reading a pitch of: -1.24
+The magnetometer (compass) is reading a heading of: 101.95
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.02
+===============================================
+
+
+Setup: Robot facing left (door) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 12
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 142
+The Upper-Right IR reads: 48
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.27
+The acceloremeter is reading a pitch of: -1.45
+The magnetometer (compass) is reading a heading of: 9.25
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+Third time through:
+
+
+Setup: Robot facing forward (outside of desk) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 139
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 70
+The Upper-Right IR reads: 14
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.34
+The acceloremeter is reading a pitch of: -1.70
+The magnetometer (compass) is reading a heading of: 174.92
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.04
+===============================================
+
+
+Setup: Robot facing right (window) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 27
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 83
+The Upper-Right IR reads: 800
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.28
+The acceloremeter is reading a pitch of: -1.24
+The magnetometer (compass) is reading a heading of: 114.24
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.04
+===============================================
+
+
+Setup: Robot facing backward (computers) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 19
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 72
+The Upper-Right IR reads: 25
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.48
+The acceloremeter is reading a pitch of: -1.45
+The magnetometer (compass) is reading a heading of: 105.03
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.04
+===============================================
+
+
+Setup: Robot facing left (door) still:
+
+===============================================
+The position of the Servo is: 90
+The PING))) sensor detects object at: 9
+The Upper-Left IR reads: 21
+The Lower-Left IR reads: 68
+The Upper-Right IR reads: 49
+The Lower-Right IR reads: 2
+The motors are running at a speed of: 0
+The accelerometer is reading a roll of: -2.71
+The acceloremeter is reading a pitch of: -1.46
+The magnetometer (compass) is reading a heading of: 5.55
+The gyro is reading a X, Y, Z acceleration of: -0.02, 0.03, 0.03
+===============================================
+
+
+
+-------------------------------------------------------------------------------
+Conclusions:
+
+Heading measurement goes from 0-360 degrees succesfully while the robot remains still, and it remains constant
+with a +/- 5 degree error
+
+Gyro readings remain the same +/- 0.01 throughout readings
+
+Accelerometer readings remain the same +/- 0.1 throughout readings
+
+Autorange does not affect the readings when the robot remains still
