@@ -1,0 +1,15 @@
+Resources used:
+
+ros.org tutorials
+
+german-robot.com for Ubuntu MATE image with ROS
+
+----------------------------------------------
+To connect Arduino to Raspberry Pi:
+https://www.intorobotics.com/installing-and-setting-up-arduino-with-ros-kinetic-raspberry-pi-3/
+
+http://wiki.ros.org/rosserial_arduino/Tutorials
+
+------------------------------------------------
+For ultrasound PING))) code (modified by me)
+https://fleshandmachines.wordpress.com/2011/09/16/arduino-double-sonar-with-ros/
