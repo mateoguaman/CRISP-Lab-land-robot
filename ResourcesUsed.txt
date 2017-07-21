@@ -13,3 +13,7 @@ http://wiki.ros.org/rosserial_arduino/Tutorials
 ------------------------------------------------
 For ultrasound PING))) code (modified by me)
 https://fleshandmachines.wordpress.com/2011/09/16/arduino-double-sonar-with-ros/
+
+------------------------------------------------
+To learn about IMUs:
+http://www.starlino.com/imu_guide.html
