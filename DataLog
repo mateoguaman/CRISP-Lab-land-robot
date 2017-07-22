@@ -778,3 +778,51 @@ Gyro readings remain the same +/- 0.01 throughout readings
 Accelerometer readings remain the same +/- 0.1 throughout readings
 
 Autorange does not affect the readings when the robot remains still
+
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+July 22
+
+Sensors Data:
+
+From sensorapi example of L3GD20 library
+Gyroscope:
+
+------------------------------------
+Sensor:       L3GD20
+Driver Ver:   1
+Unique ID:    20
+Max Value:    4.36 rad/s
+Min Value:    -4.36 rad/s
+Resolution:   0.00 rad/s
+------------------------------------
+
+-------------------------------------------------------------------------------
+From accelsensor example in LSM303 library
+Accelerometer:
+
+------------------------------------
+Sensor:       LSM303
+Driver Ver:   1
+Unique ID:    54321
+Max Value:    0.00 m/s^2
+Min Value:    0.00 m/s^2
+Resolution:   0.00 m/s^2
+------------------------------------
+
+-------------------------------------------------------------------------------
+From magsensor example in LSM303 library
+Magnetometer:
+
+------------------------------------
+Sensor:       LSM303
+Driver Ver:   1
+Unique ID:    12345
+Max Value:    0.00 uT
+Min Value:    0.00 uT
+Resolution:   0.00 uT
+------------------------------------
+
