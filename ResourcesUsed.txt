@@ -17,3 +17,23 @@ https://fleshandmachines.wordpress.com/2011/09/16/arduino-double-sonar-with-ros/
 ------------------------------------------------
 To learn about IMUs:
 http://www.starlino.com/imu_guide.html
+
+------------------------------------------------
+To learn about quaternions:
+
+Quaternions explained briefly
+Author: Mathoma
+https://www.youtube.com/watch?v=jlskQDR8-bY
+
+
+Fantastic Quaternions - Numberphile
+Author: Numberphile
+https://www.youtube.com/watch?v=3BR8tK-LuB0
+
+To learn how they are applied to rotations/orientations:
+http://developerblog.myo.com/quaternions/
+
+Not used yet, but in case I need to lerp:
+https://chicounity3d.wordpress.com/2014/05/23/how-to-lerp-like-a-pro/
+
+
