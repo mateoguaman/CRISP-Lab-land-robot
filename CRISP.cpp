@@ -13,15 +13,15 @@
     
 //LU stands for Left-Up, LD for Left-Down, RD for Right-Down, RU for Right-Up
 //Initialize SharpIR objects
-SharpIR sharp_LU(0, 430);
-SharpIR sharp_LD(1, 430);
-SharpIR sharp_RD(2, 430);
-SharpIR sharp_RU(3, 430);
+//SharpIR sharp_LU(0, 430);
+//SharpIR sharp_LD(1, 430);
+//SharpIR sharp_RD(2, 430);
+//SharpIR sharp_RU(3, 430);
 
-int dist_IR_LU;
-int dist_IR_LD;
-int dist_IR_RD;
-int dist_IR_RU;
+//int dist_IR_LU;
+//int dist_IR_LD;
+//int dist_IR_RD;
+//int dist_IR_RU;
 
 //=================================================================
 //                              SERVO
@@ -61,7 +61,10 @@ float seaLevelPressure = SENSORS_PRESSURE_SEALEVELHPA;
 
 float roll;
 float pitch;
-float heading; 
+float heading;
+float accelX;
+float accelY;
+float accelZ; 
 float gyroX;
 float gyroY;
 float gyroZ;
@@ -142,18 +145,18 @@ void loop()
 //                              Sharp IRs
 //=================================================================
     
-    dist_IR_LU = sharp_LU.distance();
-    dist_IR_LD = sharp_LD.distance();
-    dist_IR_RD = sharp_RD.distance();
-    dist_IR_RU = sharp_RU.distance();
-    Serial.print("The Upper-Left IR reads: ");
-    Serial.println(dist_IR_LU);
-    Serial.print("The Lower-Left IR reads: ");
-    Serial.println(dist_IR_LD);
-    Serial.print("The Upper-Right IR reads: ");
-    Serial.println(dist_IR_RU);
-    Serial.print("The Lower-Right IR reads: ");
-    Serial.println(dist_IR_RD);
+//    dist_IR_LU = sharp_LU.distance();
+//    dist_IR_LD = sharp_LD.distance();
+//    dist_IR_RD = sharp_RD.distance();
+//    dist_IR_RU = sharp_RU.distance();
+//    Serial.print("The Upper-Left IR reads: ");
+//    Serial.println(dist_IR_LU);
+//    Serial.print("The Lower-Left IR reads: ");
+//    Serial.println(dist_IR_LD);
+//    Serial.print("The Upper-Right IR reads: ");
+//    Serial.println(dist_IR_RU);
+//    Serial.print("The Lower-Right IR reads: ");
+//    Serial.println(dist_IR_RD);
 
 //=================================================================
 //                              Motors
@@ -173,23 +176,35 @@ void loop()
     sensors_vec_t   orientation;
 
     accel.getEvent(&accel_event);
-    if (dof.accelGetOrientation(&accel_event, &orientation))
-    {
-        roll = orientation.roll;
-        pitch = orientation.pitch;
-        Serial.print("The accelerometer is reading a roll of: ");
-        Serial.println(roll);
-        Serial.print("The acceloremeter is reading a pitch of: ");
-        Serial.println(pitch);
-    }
 
-    mag.getEvent(&mag_event);
-    if (dof.magGetOrientation(SENSOR_AXIS_Z, &mag_event, &orientation))
-    {
-        heading = orientation.heading;
-        Serial.print("The magnetometer (compass) is reading a heading of: ");
-        Serial.println(heading);
-    }
+    accelX = accel_event.acceleration.x;
+    accelY = accel_event.acceleration.y;
+    accelZ = accel_event.acceleration.z;
+
+    Serial.print("The accelerometer is reading a X, Y, Z acceleration of: ");
+    Serial.print(accelX);
+    Serial.print(", ");
+    Serial.print(accelY);
+    Serial.print(", ");
+    Serial.println(accelZ);
+
+//   if (dof.accelGetOrientation(&accel_event, &orientation))
+//    {
+//        roll = orientation.roll;
+//        pitch = orientation.pitch;
+//        Serial.print("The accelerometer is reading a roll of: ");
+//        Serial.println(roll);
+//        Serial.print("The acceloremeter is reading a pitch of: ");
+//        Serial.println(pitch);
+//    }
+
+//    mag.getEvent(&mag_event);
+//    if (dof.magGetOrientation(SENSOR_AXIS_Z, &mag_event, &orientation))
+//    {
+//        heading = orientation.heading;
+//        Serial.print("The magnetometer (compass) is reading a heading of: ");
+//        Serial.println(heading);
+//    }
 
     gyro.getEvent(&gyro_event);
     gyroX = gyro_event.gyro.x;
