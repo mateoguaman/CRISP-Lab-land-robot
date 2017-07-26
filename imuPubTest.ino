@@ -1,3 +1,4 @@
+//CHANGE VECTOR3 to VECTOR3Stamped
 #include <ros.h>
 #include <ros/time.h>
 #include <Wire.h>
