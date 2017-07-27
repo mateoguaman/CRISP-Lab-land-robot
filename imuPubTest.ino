@@ -1,30 +1,33 @@
-//CHANGE VECTOR3 to VECTOR3Stamped
 #include <ros.h>
 #include <ros/time.h>
 #include <Wire.h>
 #include <geometry_msgs/Vector3.h>
+#include <geometry_msgs/Vector3Stamped.h>
 #include <sensor_msgs/MagneticField.h>
 #include <sensor_msgs/Imu.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_LSM303_U.h>
 #include <Adafruit_L3GD20_U.h>
 #include <Adafruit_9DOF.h>
-#include "Arduino.h"
 
 ros::NodeHandle nh;
+
 sensor_msgs::MagneticField mag_msg;
 sensor_msgs::Imu imu_msg;
+geometry_msgs::Vector3Stamped rpy_msg;
 geometry_msgs::Vector3 accel_vec;
 geometry_msgs::Vector3 gyro_vec;
 geometry_msgs::Vector3 mag_vec;
 geometry_msgs::Vector3 rpy_vec;
 
+
 char frameidMag[] = "/magnetometer";
 char frameidImu[] = "/imu";
+char frameidRpy[] = "/rpy";
 
 Adafruit_9DOF dof = Adafruit_9DOF();
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(30301);
-Adafruit_LSM303_Mag_Unified   mag   = Adafruit_LSM303_Mag_Unified(30302);
+Adafruit_LSM303_Mag_Unified mag = Adafruit_LSM303_Mag_Unified(30302);
 Adafruit_L3GD20_Unified gyro = Adafruit_L3GD20_Unified(20);
 
 float roll;
@@ -70,19 +73,22 @@ void initSensors()
 
 ros::Publisher pub_mag("magnetometer", &mag_msg);
 ros::Publisher pub_imu("imu", &imu_msg);
-ros::Publisher pub_rpy("rpy", &rpy_vec);
+ros::Publisher pub_rpy("rpy", &rpy_msg);
 
 
 void setup()
 {
+    Serial.begin(57600);
     nh.initNode();
     nh.advertise(pub_mag);
     nh.advertise(pub_imu);
+    nh.advertise(pub_rpy);
     
     initSensors();
     
     mag_msg.header.frame_id = frameidMag;
     imu_msg.header.frame_id = frameidImu;
+    rpy_msg.header.frame_id = frameidRpy;
 }
 
 void loop()
@@ -138,15 +144,16 @@ void loop()
     imu_msg.linear_acceleration = accel_vec;
     imu_msg.header.stamp = nh.now();
     mag_msg.header.stamp = nh.now();
+    rpy_msg.header.stamp = nh.now();
     mag_msg.magnetic_field = mag_vec;
+    rpy_msg.vector = rpy_vec;
+    
     
     pub_mag.publish(&mag_msg);
     pub_imu.publish(&imu_msg);
-    pub_rpy.publish(&rpy_vec);
+    pub_rpy.publish(&rpy_msg);
     
-    nh.spinOnce();
-    
-    
+    nh.spinOnce();    
 }
 
 
