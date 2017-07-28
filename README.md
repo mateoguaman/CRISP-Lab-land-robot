@@ -36,9 +36,11 @@ The chassis for the robot consists of a 25cm x 15cm rectangle that acts like the
 The chassis was designed using Adobe Illustrator, and the file containing the design can be found on this repo inside the "chassis" folder.
 
 ### Circuit
-
+A Fritzing file for the circuit of the robot can be found inside the "files" folder. The Arduino is powered by a LiPo 3S battery connected to the Motor Shield, and the Raspberry Pi should also be connected to power, peripherals, and to the Arduino through a USB cable. Here is an image of the circuit: 
+![Circuit image](/images/CRISPRobotCircuit.png)
 ### Sensors
-
+- PING))) Ultrasonic Sensor: The PING))) sensor has three pins: +5v, GND, and a signal (SIG) pin. To initialize the sensor, a short burst has to be sent initially, as shown in the code. 
+- Adafruit 9 DOF: The Adafruit 9 DOF breakout board includes two 
 ## Software
 The Raspberry Pi and the Arduino communicate through ROS using the ROSSerial package. 
 ### Operating System
