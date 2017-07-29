@@ -39,17 +39,24 @@ The chassis was designed using Adobe Illustrator, and the file containing the de
 A Fritzing file for the circuit of the robot can be found inside the "files" folder. The Arduino is powered by a LiPo 3S battery connected to the Motor Shield, and the Raspberry Pi should also be connected to power, peripherals, and to the Arduino through a USB cable. Here is an image of the circuit: 
 ![Circuit image](/images/CRISPRobotCircuit.png)
 ### Sensors
-- PING))) Ultrasonic Sensor: The PING))) sensor has three pins: +5v, GND, and a signal (SIG) pin. To initialize the sensor, a short burst has to be sent initially, as shown in the code. 
-- Adafruit 9 DOF: The Adafruit 9 DOF breakout board includes two 
+- PING))) Ultrasonic Sensor: The PING))) sensor has three pins: +5v, GND, and a signal (SIG) pin. The sensor has a range of approximately 2cm to 30 cm. To initialize the sensor, a short burst has to be sent initially, as shown in the code. 
+- Adafruit 9 DOF: The Adafruit 9 DOF breakout board includes two different sensors: an L3GD20H Triple-Axis Gyro, and a LSM303 Triple-axis Accelerometer and Magnetometer. These sensors communicate through I2C/SPI. In the case of this robot, the communication is done through I2C. It should be noted that because of the physical layout of the breakout board, the accelerometer and the gyroscope are in opposite directions, which means that the readings from either of these sensors has to be multiplied by -1 to have both of the sensors in the same direction.
 ## Software
 The Raspberry Pi and the Arduino communicate through ROS using the ROSSerial package. 
 ### Operating System
+The Raspberry Pi runs a version of Ubuntu Mate Xenial 16.04 which included ROS Kinetic, downloaded from [german-robot.com](http://www.german-robot.com/2016/05/26/raspberry-pi-sd-card-image/). In order to setup the operating system, the instructions on the page mentioned above and on the official [ROS Kinetic Installation Guide for Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu) were used. 
 ### Communication
+The method of communication between the Raspberry Pi and the Arduino, that reads all the sensors and controls the motors, is through ROS. ROS allows the data to be sent to different nodes as asynchronous messages of different types using publishers and subscribers. Additionally, it also allows data to be sent in a service/client way. One advantage of ROS is that the messages being sent are language agnostic, which means that subscribers and publishers can be coded in either C++ or Python (the two officially supported languages) but the message itself is not in any of these formats. This allows for different nodes to be programmed in either of these two language without modifying the messages sent. ROS provides many packages that can be very useful when dealing with navigation and computer vision, such as tf2 (a transform package) and support for OpenCV. Additionally, it provides different visualization tools such as rosqt_graph and rosqt_plot which can be used to display the messages being sent through each of the topics and to visualize how the nodes are interconnected. 
+### ROS
+The Raspberry Pi and the Arduino communicate using ROS through USB using the rosserial package. One feature of ROS is that it allows messages to be sent in specified ways. In other words, there are many preset types of messages available for better communication. For example, the ultrasonic sensor uses the sensor_msg/Range type of message to send its readings. 
 ### Nodes
-Include visualization of the nodes
+ROS allows for there to be one main node and multiple secondary nodes that can communicate either to the main node or between secondary nodes. In the case of this robot, at the moment there is only one node on the Arduino which will in the future be one of the secondary nodes. The Arduino can only be one node, which means that all of the data is sent through the same node and that all the messages to control the motors are received on the same node. However, the goal is to have multiple nodes running on the Raspberry Pi that control different aspects of the motor controller. For example, there would be a node dedicated to processing the data from the IMU to give back an accurate representation of the position and heading of the robot, another node that sends the appropriate motor speeds and directions, and a main node that organizes everything.
+
+TODO: Include visualization of the nodes
 ### Raspberry Pi
 #### Setup
-##### Operating system
+##### ROS
+roscore
 ##### Packages installed
 #### Resources used
 ### Nodes on the Raspberry Pi
@@ -60,4 +67,5 @@ Include visualization of the nodes
 
 ### Arduino
 #### Arduino Node
+#### Libraries Used 
 
