@@ -54,18 +54,37 @@ ROS allows for there to be one main node and multiple secondary nodes that can c
 
 TODO: Include visualization of the nodes
 ### Raspberry Pi
+The Raspberry Pi 3 is the brains of the robot. It coordinates all of the nodes in a main node and it will also include additional nodes to do different processes such as navigation, image processing, and sensor data filtering. The Raspberry Pi is powered by a cellphone battery pack so that it can be part of the robot. 
 #### Setup
+As mentioned before, the Raspberry Pi is running Ubuntu Mate Xenial 16.4. The first time that the Raspberry Pi was booted, the filesystem was expanded and SSH was enabled. In the future, the Raspberry Pi will have a Raspberry Pi Camera Module V2.1 attached to it to get the images that will be used to detect objects.
 ##### ROS
-roscore
+The version of ROS installed on the Raspberry Pi is ROS Kinetic, which was setup following the instructions from the main ROS Tutorials wiki page. 
 ##### Packages installed
+As of now, the packages installed on the Raspberry Pi are rosserial and tf2. Rosserial is mainly used to establish the communication through a serial port with the Arduino, and tf2 will be used to coordinate the transforms of the orientations and rotations of the robot. Additionally, Arduino was installed on the Raspberry Pi following the instructions from the [rosserial tutorials](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup). This installs the Arduino IDE so that the programs to the Arduino can be run directly from the IDE, although one goal is to use ROS launch to run the files once the Raspberry Pi is mounted on the robot.
 #### Resources used
+Some resources used to setup the Raspberry Pi to communicate with the Arduino through ROS are: 
+- [Introrobotics](https://www.intorobotics.com/installing-and-setting-up-arduino-with-ros-kinetic-raspberry-pi-3/) to learn how to setup an Arduino with ROS Kinetic on a Raspberry Pi 3
+
+- The official [rosserial wiki](http://wiki.ros.org/rosserial_arduino/Tutorials) to learn more about how rosserial works, how to create publishers and subscribers with the Arduino, examples, and more.
 ### Nodes on the Raspberry Pi
+To come
 #### IMU Filter
 #### Motor Driver
 #### Image Processing
 #### Main Node
 
 ### Arduino
+The Arduino acts like an interface between the sensors and motors and the main processing unit of the robot, which in this case is the Raspberry Pi. The Arduino used on the robot is an Arduino Mega because of its increased processing power, memory, and number of pins available compared to an Arduino Uno. An Arduino Motor Shield controls the DC motors for the wheels, because of its ease of use and because it allows more power to be sent to the motors.  
+
+To run files and receive data from the Arduino, a few steps need to be completed first:
+1. On the terminal window, run ```roscore```
+2. Upload the program to the Arduino from the Arduino IDE (the first line of this file should be ```#include <ros.h>```), making sure the right Arduino board and serial port used are selected on the "Tools window"
+3. On another terminal window, run ```rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=9600``` changing ```ttyACM0``` and ```9600``` depending on the values needed.
+4. After doing these, the terminal should indicate which subscribers/publishers exist, and these can be accessed using ROS tools such as ```rostopic echo {}``` with the brackets being replaced by the topic and message you want to see.
 #### Arduino Node
+The Arduino can only be used to run one ROS node, so this node is in charge of handling the reading of the sensors, sending them to the Raspberry Pi, and receiving commands for the motors. The code for this node can be found in this repo under the name of robotNode.ino.
+
+##### Messages
+
 #### Libraries Used 
 
