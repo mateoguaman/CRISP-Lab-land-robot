@@ -84,7 +84,23 @@ To run files and receive data from the Arduino, a few steps need to be completed
 The Arduino can only be used to run one ROS node, so this node is in charge of handling the reading of the sensors, sending them to the Raspberry Pi, and receiving commands for the motors. The code for this node can be found in this repo under the name of robotNode.ino.
 
 ##### Messages
-To come.
+The program includes different types of messages that are used to communicate the information to the sensors in a more organized manner. There are three different types of messages used in this program: standard messages, geometry messages, and sensor messages. 
+
+The standard messages used in this program are:
+- The standard data type Float64 is used to receive the power that should be given to the motors (0-255 to move forward or -255-0 to move backward). Floats are used in this case because the power sent to the motors can be either positive or negative to indicate in which direction the motors should rotate.
+- The standard data type UInt16 is used to receive the angle that the servo motor should move to. The servo motor can only move between 0-180 degrees, which means that the unsigned integer suffices for this purpose.  
+
+The geometry messages used in this program are:
+- Vector3: This message is used to represent a three dimensional vector of float64 numbers to represent the x, y, and z axes. This message is used in this code to create 3D linear acceleration (from accelerometer), 3D angular velocity (from gyroscope), and 3D magnetic field (from magnetometer) vectors. Additionally, this type of message is also being used to send the roll, pitch, and yaw (or heading) computed on the Arduino by one of Adafruit's libraries used, described in another section of this README. 
+- Vector3Stamped: This type of message is very similar to the Vector3 message, but it includes a header for the message (which is actually a ROS standard message) that includes a time stamp of the vector and a frame ID. This message is used in this program to send the rpy (roll, pitch, and yaw) vector described above to the Raspberry Pi with a timestamp so that it can be known when that message was sent. 
+
+The sensor messages used in this program are: 
+- Range: This message is used to send the range data measured by the PING))) Ultrasonic Sensor as a float32 data type in meters. Additionally, it sends information about the sensor and a header message. The information about the sensor that it sends include the radiation type that the sensor uses to detect distance (Infrared or Ultrasound), the field-of-view of the sensor as an arc in radians, and the minimum and maximum ranges of the sensor. The header message, as explained above, sends a frame ID for the sensor and a timestamp of when the reading happened.
+- IMU: This message is used to send inertial information about the robot. It has the ability to send three geometry messages: an orientation quaternion, an angular velocity Vector3. and a linear acceleration Vector3. Additionally, it allows to send a 9-float64 array for each of the mentioned measurements' covariances. Finally, it also allows a header file, again, with a timestamp and a frame ID, to be sent alongside the sensor readings. In the case of this program, only the linear acceleration and the angular velocity vectors are sent, as well as the header file. The data being sent from this message allows the Raspberry Pi to know the orientation of the robot at any given time. The Adafruit 9-DOF IMU sensor also includes a magnetometer, but this type of message does not support data from this sensor to be sent. 
+- MagneticField: In order to have a magnetic field reading from the IMU to be able to calculate a more accurate orientation, the MagneticField message is used to send a 3D vector of the magnetic field readings in all three axes as a Vector3 and a 9-float64 array of the magnetic field covariance. Additionally, this message also includes a header file, so it sends a timestamp and a frame ID alongside the sensor readings.
+
+##### Using the IMU
+
 
 #### Libraries Used 
 To come.
