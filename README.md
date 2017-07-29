@@ -66,7 +66,7 @@ Some resources used to setup the Raspberry Pi to communicate with the Arduino th
 
 - The official [rosserial wiki](http://wiki.ros.org/rosserial_arduino/Tutorials) to learn more about how rosserial works, how to create publishers and subscribers with the Arduino, examples, and more.
 ### Nodes on the Raspberry Pi
-To come
+To come.
 #### IMU Filter
 #### Motor Driver
 #### Image Processing
@@ -84,8 +84,10 @@ To run files and receive data from the Arduino, a few steps need to be completed
 The Arduino can only be used to run one ROS node, so this node is in charge of handling the reading of the sensors, sending them to the Raspberry Pi, and receiving commands for the motors. The code for this node can be found in this repo under the name of robotNode.ino.
 
 ##### Messages
+To come.
 
 #### Libraries Used 
+To come.
 
 ![Picture of Robot](/images/robot1.JPG)
 ![Picture of Robot](/images/robot2.JPG)
