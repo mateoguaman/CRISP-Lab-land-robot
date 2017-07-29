@@ -1,6 +1,4 @@
 # CRISP-Lab-land-robot
-![Picture of Robot](/images/robot1.JPG)
-![Picture of Robot](/images/robot2.JPG)
 ## About
 Documentation for robot being developed by Mateo Guaman under Professor Usman Khan, Tufts University, 2017
 ## Goals
@@ -88,4 +86,7 @@ The Arduino can only be used to run one ROS node, so this node is in charge of h
 ##### Messages
 
 #### Libraries Used 
+
+![Picture of Robot](/images/robot1.JPG)
+![Picture of Robot](/images/robot2.JPG)
 
