@@ -1,5 +1,6 @@
 # CRISP-Lab-land-robot
-
+![Picture of Robot](/images/robot1.JPG)
+![Picture of Robot](/images/robot2.JPG)
 ## About
 Documentation for robot being developed by Mateo Guaman under Professor Usman Khan, Tufts University, 2017
 ## Goals
