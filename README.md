@@ -2,7 +2,7 @@
 ## About
 Documentation for robot being developed by Mateo Guaman under Professor Usman Khan, Tufts University, 2017
 ## Goals
-The main goal of this project is to develop a four-wheeled land robot that can detect and navigate to a certain object with specific characteristics (i.e, a certain color or shape) using computer vision.
+The main goal of this project is to develop a four-wheeled land robot that can autonomously detect and navigate to a certain object with specific characteristics (i.e, a certain color or shape) using computer vision.
 
 Other secondary goals of this project are:
 - Build an autonomous obstacle avoidance robot without any vision other than an ultrasonic sensor located at the front of the robot.
